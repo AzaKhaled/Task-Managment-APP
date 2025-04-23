@@ -14,10 +14,9 @@ class MyWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:
-          // ScreanThree(),
-          //ScreanTwo(),
-       ScreanOne(),
+      home: ScreanThree(),
+      // ScreanTwo(),
+      //  ScreanOne(),
     );
   }
 }

@@ -142,7 +142,6 @@ class ScreanThree extends StatelessWidget {
                     ),
                   ),
 
-                  // جهة اليمين: الصور تحت
                   SizedBox(
                     width: 100,
                     height: 50,
@@ -412,6 +411,63 @@ class ScreanThree extends StatelessWidget {
                             radius: 20,
                             backgroundImage: AssetImage(
                               'assets/images/Ellipse 253.png',
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 2),
+            Container(
+              padding: EdgeInsets.all(12),
+              margin: EdgeInsets.symmetric(horizontal: 12),
+              decoration: BoxDecoration(
+                color: Color(0xFFFF69B4),
+                borderRadius: BorderRadius.circular(16),
+              ),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.end,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Icon(
+                          Icons.circle,
+                          color: Color.fromARGB(255, 229, 245, 61),
+                        ),
+                        SizedBox(height: 8),
+                        Text(
+                          'Create New Blog Post',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                        SizedBox(height: 8),
+                        Row(
+                          children: [
+                            Icon(Icons.date_range, size: 16),
+                            SizedBox(width: 4),
+                            Text('2 hours ago'),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+
+                  SizedBox(
+                    width: 100,
+                    height: 50,
+                    child: Stack(
+                      children: [
+                        Positioned(
+                          right: 0,
+                          child: CircleAvatar(
+                            radius: 20,
+                            backgroundImage: AssetImage(
+                              'assets/images/Ellipse 260.png',
                             ),
                           ),
                         ),
